@@ -1,0 +1,168 @@
+@font-face 
+{
+    font-family: 'Dotham Black';
+    src: url('/fonts/dotham/dotham-black-webfont.eot');
+    src: url('/fonts/dotham/dotham-black-webfont.svg#dotham_blackregular') format('svg'),
+	     url('/fonts/dotham/dotham-black-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('/fonts/dotham/dotham-black-webfont.woff') format('woff'),
+         url('/fonts/dotham/dotham-black-webfont.ttf') format('truetype');         
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'Dotham Black Italic';
+    src: url('/fonts/dotham/dotham-blackitalic-webfont.eot');
+    src: url('/fonts/dotham/dotham-blackitalic-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('/fonts/dotham/dotham-blackitalic-webfont.svg#dotham_blackitalic') format('svg'),
+         url('/fonts/dotham/dotham-blackitalic-webfont.woff') format('woff'),
+         url('/fonts/dotham/dotham-blackitalic-webfont.ttf') format('truetype');         
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'Dotham Bold';
+    src: url('/fonts/dotham/dotham-bold-webfont.eot');
+    src: url('/fonts/dotham/dotham-bold-webfont.svg#dotham_boldregular') format('svg'),
+	     url('/fonts/dotham/dotham-bold-webfont.eot?#iefix') format('embedded-opentype'),	     
+         url('/fonts/dotham/dotham-bold-webfont.woff') format('woff'),
+         url('/fonts/dotham/dotham-bold-webfont.ttf') format('truetype');         
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'Dotham Bold Italic';
+    src: url('/fonts/dotham/dotham-bolditalic-webfont.eot');
+    src: url('/fonts/dotham/dotham-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('/fonts/dotham/dotham-bolditalic-webfont.svg#dotham_bolditalic') format('svg'),
+         url('/fonts/dotham/dotham-bolditalic-webfont.woff') format('woff'),
+         url('/fonts/dotham/dotham-bolditalic-webfont.ttf') format('truetype');         
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'Dotham Medium';
+    src: url('/fonts/dotham/dotham-medium-webfont.eot');
+    src: url('/fonts/dotham/dotham-medium-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('/fonts/dotham/dotham-medium-webfont.svg#dotham_mediumregular') format('svg'),
+         url('/fonts/dotham/dotham-medium-webfont.woff') format('woff'),
+         url('/fonts/dotham/dotham-medium-webfont.ttf') format('truetype');         
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'Dotham Medium Italic';
+    src: url('/fonts/dotham/dotham-mediumitalic-webfont.eot');
+    src: url('/fonts/dotham/dotham-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('/fonts/dotham/dotham-mediumitalic-webfont.svg#dotham_mediumitalic') format('svg'),
+         url('/fonts/dotham/dotham-mediumitalic-webfont.woff') format('woff'),
+         url('/fonts/dotham/dotham-mediumitalic-webfont.ttf') format('truetype');         
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'Dotham Book';
+    src: url('/fonts/dotham/dotham-book-webfont.eot');
+    src: url('/fonts/dotham/dotham-book-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('/fonts/dotham/dotham-book-webfont.svg#dotham_bookregular') format('svg'),
+         url('/fonts/dotham/dotham-book-webfont.woff') format('woff'),
+         url('/fonts/dotham/dotham-book-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'Dotham Book Italic';
+    src: url('/fonts/dotham/dotham-bookitalic-webfont.eot');
+    src: url('/fonts/dotham/dotham-bookitalic-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('/fonts/dotham/dotham-bookitalic-webfont.svg#dotham_bookitalic') format('svg'),
+         url('/fonts/dotham/dotham-bookitalic-webfont.woff') format('woff'),
+         url('/fonts/dotham/dotham-bookitalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'Dotham Light';
+    src: url('/fonts/dotham/dotham-light-webfont.eot');
+    src: url('/fonts/dotham/dotham-light-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('/fonts/dotham/dotham-light-webfont.svg#dotham_lightregular') format('svg'),
+         url('/fonts/dotham/dotham-light-webfont.woff') format('woff'),
+         url('/fonts/dotham/dotham-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'Dotham Light Italic';
+    src: url('/fonts/dotham/dotham-lightitalic-webfont.eot');
+    src: url('/fonts/dotham/dotham-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('/fonts/dotham/dotham-lightitalic-webfont.svg#dotham_lightitalic') format('svg'),
+         url('/fonts/dotham/dotham-lightitalic-webfont.woff') format('woff'),
+         url('/fonts/dotham/dotham-lightitalic-webfont.ttf') format('truetype');       
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'Dotham Thin';
+    src: url('/fonts/dotham/dotham-thin-webfont.eot');
+    src: url('/fonts/dotham/dotham-thin-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('/fonts/dotham/dotham-thin-webfont.svg#dotham_thinregular') format('svg'),
+         url('/fonts/dotham/dotham-thin-webfont.woff') format('woff'),
+         url('/fonts/dotham/dotham-thin-webfont.ttf') format('truetype');         
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'Dotham Thin Italic';
+    src: url('/fonts/dotham/dotham-thinitalic-webfont.eot');
+    src: url('/fonts/dotham/dotham-thinitalic-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('/fonts/dotham/dotham-thinitalic-webfont.svg#dotham_thinitalic') format('svg'),
+         url('/fonts/dotham/dotham-thinitalic-webfont.woff') format('woff'),
+         url('/fonts/dotham/dotham-thinitalic-webfont.ttf') format('truetype');         
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'Dotham Extra Light';
+    src: url('/fonts/dotham/dotham-xlight-webfont.eot');
+    src: url('/fonts/dotham/dotham-xlight-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('/fonts/dotham/dotham-xlight-webfont.svg#dotham_extra_lightregular') format('svg'),
+         url('/fonts/dotham/dotham-xlight-webfont.woff') format('woff'),
+         url('/fonts/dotham/dotham-xlight-webfont.ttf') format('truetype');         
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'Dotham Extra Light Italic';
+    src: url('/fonts/dotham/dotham-xlightitalic-webfont.eot');
+    src: url('/fonts/dotham/dotham-xlightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('/fonts/dotham/dotham-xlightitalic-webfont.svg#dotham_extra_lightitalic') format('svg'),
+         url('/fonts/dotham/dotham-xlightitalic-webfont.woff') format('woff'),
+         url('/fonts/dotham/dotham-xlightitalic-webfont.ttf') format('truetype');         
+    font-weight: normal;
+    font-style: normal;
+}
+

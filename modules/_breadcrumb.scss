@@ -1,0 +1,47 @@
+/*******************************************************************************
+*
+*  Modules » breadcrumb
+*
+*
+*******************************************************************************/
+.breadcrumb-container {
+  position: absolute;
+  top: 75.2px;
+}
+
+%breadcrumb {
+  margin-bottom: 10px;
+  list-style: none;
+}
+.breadcrumb {
+    @extend %breadcrumb;
+    li {
+      @extend %FontDothamMedium;
+      font-size: 12.2px;
+      display: inline-block;
+      color: #777;
+      &:first-child {
+        @extend %FontDothamBook;
+        font-size: 12px;
+        color: #aaa;
+      }
+
+    }
+}
+
+.breadcrumb > li + li:before {
+  content: "/";
+  padding: 0 6.8px;
+  color: #aaa;
+}
+
+.breadcrumb-link {
+  @extend %breadcrumb-font;
+  text-decoration: none;
+  color: #ccc;
+}
+
+.breadcrumb-link.is-active {
+  color: #000 !important;
+}
+

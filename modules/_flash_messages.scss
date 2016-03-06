@@ -1,0 +1,26 @@
+/* ==========================================================================
+  Modules  » Flash Messages
+========================================================================== */
+%flash_messages {
+  width: 60%;
+  margin: 0 auto;
+  display: block;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 2px;
+}
+
+.flash-error {
+  @extend .badge-error;
+  @extend %flash_messages;
+}
+.flash-success {
+  @extend .badge-success;
+  @extend %flash_messages;
+}
+
+.flash-utilized  {
+  @extend .badge-utilized ;
+  @extend %flash_messages;
+}

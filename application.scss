@@ -1,46 +1,54 @@
 /*******************************************************************************
 *
-*  % SITE NAME %
-*  % Author Name %
-*  % author@email %
-*  
+*  % SITE ShopCart %
+*  % Eder Eduardo %
+*  % eder.esilva@gmail.com %
 *  % Site description %
-*
-*  This website was heavily based on Paul Irish's
-*  HTML5 Boilerplate, and adapted to my needs. You should definetely
-*  check it out:
-*
-*  http://html5boilerplate.com/
 *
 *  This is a bootstrap file that loads all modules,
 *  generating a single CSS file.
 *
 ********************************************************************************/
 
-
 /*******************************************************************************
-*  =Bootstrap
+*=Bootstrap
 *******************************************************************************/
-@import "compass/css3";
+@charset "utf-8";
 
+/*Base*/
 @import "base/config";
 @import "base/mixins";
-@import "base/helpers";
 
-@import "core/reset";
+ /*Core*/
 @import "core/basic";
+@import "core/reset";
 @import "core/forms";
-@import "core/tables";
-@import "core/typography";
 
-@import "layout/main";
+/* PlaceHolders */
+@import "patterns/placeholders";
 
-//@import "ui/uiComponentName";
+/* Modules */
+@import "modules/buttons";
+@import "modules/icons";
+@import "modules/fonts";
+@import "modules/tables";
+@import "modules/breadcrumb";
+@import "modules/flash_messages";
 
-//@import "vendors/vendorFolder/vendorCSS";
+/* Sections */
+@import "sections/home";
 
+ /*Media Queries*/
 @import "queries/wide";
 @import "queries/lt960";
 @import "queries/lt768";
 @import "queries/lt520";
 @import "queries/retina";
+
+ /*Layout's*/
+@import "layout/header";
+@import "layout/footer";
+@import "layout/main";
+
+/* Typography */
+@import "typography/site";

@@ -9,6 +9,9 @@
 *
 *******************************************************************************/
 
+section, article {
+    box-sizing: border-box;
+}
 html {
   overflow-y: scroll;
   -webkit-text-size-adjust: 100%;
@@ -24,10 +27,11 @@ select { color: $TEXT-COLOR; }
 /*********************************************************************
 *  =Links
 *********************************************************************/
-
+a {
+  outline: none !important;
+}
 a, a:visited {
-  color: $LINK-COLOR;
-  text-decoration: underline;
+  color: none;
 }
 
 a:hover {
@@ -69,3 +73,6 @@ svg:not(:root) { overflow: hidden; }
 
 nav ul,
 nav ol { list-style: none; margin: 0; }
+li {
+  outline: none;
+}

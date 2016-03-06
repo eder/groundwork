@@ -1,0 +1,40 @@
+/*******************************************************************************
+*
+*  UI » Buttons
+*
+*  Contains the styles for the site general buttons.
+*
+*******************************************************************************/
+
+%base-button {
+    @extend %no_underline;
+    @extend %rounded-edges;
+    border: none;
+    background-color: #c74a50;
+    text-align: center;
+    color: #FFF;
+    display: block;
+    box-sizing: border-box;
+    height: 42px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    line-height: 40px;
+    &:disabled {
+      background: #dddddd;
+    }
+    &:hover {
+      color: inherit;
+    }
+ 
+}
+.button-submit {
+    @extend %base-button;
+    @extend %FontDothamBook;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+

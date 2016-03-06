@@ -1,15 +1,11 @@
-# Princípios para escrever CSS de forma consistente e idiomática
+# Princípios para escrever CSS de forma consistente e idiomática com  Groundwork
 
 O documento a seguir descreve um sensato guia de estilo para desenvolvimento
 CSS.  Não pretendo ser prescritivo e não quero impor as minhas preferências de
 estilo no código de outras pessoas. Entretanto, estas orientações incentivam
 fortemente o uso de existentes, comuns e sensatos padrões.
 
-Esse é um documento vivo e novas ideias são sempre bem-vindas. Por favor
-contribua.
-
-[Idiomatic CSS em Inglês (Original)](https://github.com/necolas/idiomatic-css)
-
+Esse é um documento vivo e novas ideias são sempre bem-vindas.
 
 ## Índice
 

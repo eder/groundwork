@@ -16,12 +16,10 @@
 .breadcrumb {
     @extend %breadcrumb;
     li {
-      @extend %FontDothamMedium;
       font-size: 12.2px;
       display: inline-block;
       color: #777;
       &:first-child {
-        @extend %FontDothamBook;
         font-size: 12px;
         color: #aaa;
       }
@@ -36,7 +34,6 @@
 }
 
 .breadcrumb-link {
-  @extend %breadcrumb-font;
   text-decoration: none;
   color: #ccc;
 }

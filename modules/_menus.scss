@@ -1,0 +1,210 @@
+/*********************************************************************
+*
+* Patterns >> Menu horizontal and vertical *
+*********************************************************************/
+
+.menu ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+.menu.menu-open {
+    visibility: visible;
+    z-index: 2;
+    width: 100%;
+}
+
+.menu ul {
+    left: -10000px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    top: -10000px;
+    z-index: 1;
+}
+
+.menu > ul { position: relative; }
+
+.menu-open > ul {
+    left: 0;
+    top: 0;
+    visibility: visible;
+}
+
+.menu-open > ul:focus {
+    outline: 0;
+}
+
+.menu li { position: relative; }
+
+.menu .menu-heading {
+    display: block;
+    line-height: 1.5em;
+    padding: 5px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.menu.menu-horizontal > .menu-heading {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    margin: 0;
+    vertical-align: middle;
+}
+.menu.menu-horizontal > ul {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: middle;
+    height: 2.4em;
+}
+
+
+.menu-can-have-children > .menu-label:after {
+    content: '\25B8';
+    float: right;
+    /* These specific fonts have the Unicode char we need. */
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'DejaVu Sans', sans-serif;
+    margin-right: -20px;
+    margin-top: -1px;
+}
+
+.menu-can-have-children > .menu-label {
+    padding-right: 30px;
+}
+
+.menu-separator {
+    background-color: #dfdfdf;
+    display: block;
+    height: 1px;
+    font-size: 0;
+    margin: 7px 2px;
+    overflow: hidden;
+}
+
+.menu-hidden {
+    display: none;
+}
+
+/* FIXED MENU */
+.menu-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+/* HORIZONTAL MENU CODE */
+
+/* Initial menus should be inline-block so that they are horizontal */
+.menu-horizontal li {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: middle;
+}
+
+/* Submenus should still be display: block; */
+.menu-horizontal li li {
+    display: block;
+}
+
+/* Content after should be down arrow */
+.menu-horizontal > .menu-children > .menu-can-have-children > .menu-label:after {
+    content: "\25BE";
+}
+/*Add extra padding to elements that have the arrow so that the hover looks nice */
+.menu-horizontal > .menu-children > .menu-can-have-children > .menu-label {
+    padding-right: 30px;
+}
+
+/* Adjusting separator for vertical menus */
+.menu-horizontal li.menu-separator {
+	height: 50%;
+	width: 1px;
+	margin: 0 7px;
+}
+
+/* Submenus should be horizontal separator again */
+.menu-horizontal li li.menu-separator {
+	height: 1px;
+	width: auto;
+	margin: 7px 2px;
+}
+
+
+/*csslint adjoining-classes:false*/
+/*TODO: Remove this lint rule override after a refactor of this code.*/
+
+/* MAIN MENU STYLING */
+
+.menu.menu-open,
+.menu.menu-horizontal li .menu-children {
+    background: #fff; /* Old browsers */
+}
+
+/* remove borders for horizontal menus */
+.menu.menu-horizontal,
+.menu.menu-horizontal .menu-heading {
+    border: none;
+}
+
+
+/* LINK STYLES */
+
+.menu a {
+    border-left: none;
+    border-right: none;
+
+}
+
+.menu .menu-can-have-children > li:after {
+}
+
+.menu .menu-can-have-children > li:hover:after {
+}
+
+/* Focus style for a dropdown menu-item when the parent has been opened */
+.menu .menu-open {
+    background: #dedede;
+}
+
+
+.menu li a:hover,
+.menu li a:focus {
+}
+
+/* DISABLED STATES */
+.menu li.menu-disabled a:hover,
+.menu li.menu-disabled a:focus {
+}
+
+.menu .menu-disabled > a {
+    background-image: none;
+    border-color: transparent;
+    cursor: default;
+}
+
+.menu .menu-disabled > a,
+.menu .menu-can-have-children.menu-disabled > a:after {
+}
+
+/* HEADINGS */
+.menu .menu-heading {
+    text-transform: uppercase;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+/* ACTIVE MENU ITEM */
+.menu .menu-selected a {
+}
+
+/* FIXED MENU */
+.menu.menu-open.menu-fixed {
+    border: none;
+    border-bottom: 1px solid #b7b7b7;
+}
+

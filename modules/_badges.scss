@@ -1,0 +1,44 @@
+/*********************************************************************
+* Modules » Badges
+*
+*
+*********************************************************************/
+.badge {
+  padding: 0.35em 0.9em 0.35em;
+  background-color: #9D988E;
+  color: #fff;
+  display: inline-block;
+  font-size: 11.844px;
+  font-weight: 500;
+  line-height: 1.2em;
+  vertical-align: baseline;
+  white-space: nowrap;
+  border-radius: 1px;
+  margin: 0.2em;
+  text-transform: uppercase;
+}
+.badge-error {
+  @extend .badge;
+  background-color: #D13C38;
+}
+.badge-warning {
+  @extend .badge;
+  background-color: #E78C05;
+}
+.badge-success {
+  @extend .badge;
+  background-color: #5C8E34;
+}
+.badge-info {
+  @extend .badge;
+  background-color: rgb(18, 169, 218);
+}
+.badge-inverse {
+  @extend .badge;
+  background-color: #4D370C;
+}
+
+.badge-utilized {
+  @extend .badge;
+  background-color:#868686;
+}

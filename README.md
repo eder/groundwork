@@ -18,9 +18,6 @@ Esse é um documento vivo e novas ideias são sempre bem-vindas.
 7. [Organização](#organization)
 8. [Build e deploy](#build-and-deployment)
 
-[Agradecimentos](#acknowledgements)
-
-
 <a name="general-principles"></a>
 ## 1. Princípios gerais
 

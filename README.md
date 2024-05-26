@@ -1,156 +1,128 @@
-# Princípios para escrever CSS de forma consistente e idiomática com  Groundwork
+# Principles for Writing Consistent and Idiomatic CSS with Groundwork
 
-O documento a seguir descreve um sensato guia de estilo para desenvolvimento
-CSS.  Não pretendo ser prescritivo e não quero impor as minhas preferências de
-estilo no código de outras pessoas. Entretanto, estas orientações incentivam
-fortemente o uso de existentes, comuns e sensatos padrões.
+The following document outlines a sensible style guide for CSS development. I do not intend to be prescriptive and do not wish to impose my stylistic preferences on others' code. However, these guidelines strongly encourage the use of existing, common, and sensible standards.
 
-Esse é um documento vivo e novas ideias são sempre bem-vindas.
+This is a living document, and new ideas are always welcome.
 
-## Índice
+## Table of Contents
 
-1. [Princípios gerais](#general-principles)
-2. [Espaços em branco](#whitespace)
-3. [Comentários](#comments)
-4. [Formatação](#format)
-5. [Nomeando](#naming)
-6. [Exemplo prático](#example)
-7. [Organização](#organization)
-8. [Build e deploy](#build-and-deployment)
+1. [General Principles](#general-principles)
+2. [Whitespace](#whitespace)
+3. [Comments](#comments)
+4. [Formatting](#format)
+5. [Naming](#naming)
+6. [Practical Example](#example)
+7. [Organization](#organization)
+8. [Build and Deployment](#build-and-deployment)
 
 <a name="general-principles"></a>
-## 1. Princípios gerais
+## 1. General Principles
 
-> "Parte de ser um bom gestor de um projeto bem sucedido é perceber que
-> escrever código para si mesmo é uma Má Ideia™. Se milhares de pessoas estão
-> usando o seu código, então escreva-o com máxima clareza, não sob a sua
-> preferência pessoal de como ser esperto com a especificação." - Idan Gazit
+> "Part of being a good steward of a successful project is realizing that writing code just for yourself is a Bad Idea™. If thousands of people are using your code, then write it with maximum clarity, not according to your personal preferences for being clever with the specification." - Idan Gazit
 
-* Todo código em qualquer aplicação deve parecer como se tivesse sido escrito
-  por uma única pessoa, independentemente de quantas pessoas tenham contribuído.
-* Faça cumprir rigorosamente o estilo acordado.
-* Em caso de dúvida, utilizar padrões existentes e comuns.
-
+* All code in any application should look as if it was written by a single person, regardless of how many people contributed.
+* Enforce the agreed-upon style rigorously.
+* When in doubt, use existing and common standards.
 
 <a name="whitespace"></a>
-## 2. Espaços em branco
+## 2. Whitespace
 
-Apenas um estilo deve existir em todo o projeto. Seja sempre consistente na
-utilização de espaços em branco. Use espaços em branco para melhorar a
-legibilidade.
+Only one style should exist throughout the project. Always be consistent with the use of whitespace. Use whitespace to improve readability.
 
-* _Nunca_ misture espaços e tabs para indentação.
-* Escolha entre indentação suave (espaços) ou tabulação. Atenha-se à sua
-  escolha sem falhar. (Preferência: espaços)
-* Se usar espaços, escolha o número de caracteres usados por nível de
-  indentação.  (Preferência: 4 espaços)
+* _Never_ mix spaces and tabs for indentation.
+* Choose between soft indentation (spaces) or hard indentation (tabs). Stick to your choice without fail. (Preference: spaces)
+* If using spaces, choose the number of characters per indentation level. (Preference: 4 spaces)
 
-Dica: configure seu editor para "mostrar invisíveis". Isso irá permitir que
-você elimine espaços em branco da quebra de linha, elimine espaços em branco de
-linhas vazias sem indentação e evite commits poluídos.
+Tip: Configure your editor to "show invisibles." This will allow you to eliminate trailing whitespace, eliminate whitespace from empty lines without indentation, and avoid polluted commits.
 
-Dica: use um [EditorConfig](http://editorconfig.org/) arquivo (ou equivalente) para ajudar a menter a convenção básica de espaços em branco que você aceitou para sua base de código.
-
+Tip: Use an [EditorConfig](http://editorconfig.org/) file (or equivalent) to help maintain the basic whitespace conventions you have agreed upon for your codebase.
 
 <a name="comments"></a>
-## 3. Comentários
+## 3. Comments
 
-Código bem comentado é extremamente importante. Tire tempo para descrever
-componentes, como eles funcionam, suas limitações, e o modo como são
-construídos. Não deixe outros no time adivinharem o propósito de códigos
-incomuns ou não óbvios.
+Well-commented code is extremely important. Take the time to describe components, how they work, their limitations, and how they are constructed. Do not leave others on the team guessing the purpose of uncommon or non-obvious code.
 
-Estilo de comentário deve ser simples e consistente dentro de uma única base de
-código.
+Comment style should be simple and consistent within a single codebase.
 
-* Coloque comentários em uma nova linha acima do seu assunto.
-* Evite comentários no fim da linha.
-* Mantenha o comprimento da linha a um máximo sensível, por exemplo, 80
-  colunas.
-* Faça o uso liberal de comentários para quebrar o código CSS em seções
-  distintas.
-* Use comentários com iniciais maiúsculas e indentação de texto consistente.
+* Place comments on a new line above their subject.
+* Avoid end-of-line comments.
+* Keep line length to a sensible maximum, e.g., 80 columns.
+* Use liberal comments to break the CSS code into distinct sections.
+* Use capitalized comments and consistent text indentation.
 
-Dica: configure seu editor para lhe prover com atalhos a geração do padrão de
-comentários acordado.
+Tip: Configure your editor to provide shortcuts for generating the agreed-upon comment style.
 
-#### exemplo com CSS:
+#### Example with CSS:
 
 ```css
 /* ==========================================================================
-   Bloco de comentário de seção
+   Section comment block
    ========================================================================== */
 
-/* Bloco de comentário de sub-seção
+/* Sub-section comment block
    ========================================================================== */
 
 /*
- * Bloco de comentário de grupo
- * Ideal para explicações em múltiplas linhas e documentação.
+ * Group comment block
+ * Ideal for multi-line explanations and documentation.
  */
  
 /**
- * Breve descrição usando o estilo de formato de comentário Doxygen
+ * Brief description using Doxygen comment style
  *
- * A primeira frase da descrição longa começa aqui e continua
- * nesta linha por um tempo finalmente concluindo aqui no final deste parágrafo.
+ * The first sentence of the long description starts here and continues
+ * on this line for a while finally concluding here at the end of this paragraph.
  *
- * A descrição longa é ideal para explicações mais detalhadas e documentação.
- * Ele pode incluir HTML exemplo, URLs, ou qualquer outra informação
- * que seja considerada necessária ou útil.
+ * The long description is ideal for more detailed explanations and documentation.
+ * It can include HTML examples, URLs, or any other information
+ * considered necessary or helpful.
  *
- * @tag Esta é uma tag chamada 'tag'
+ * @tag This is a tag called 'tag'
  *
- * @todo Esta é uma declaração de tarefas que descreve uma tarefa atômica para ser 
- * concluída numa data posterior. Ela envolve depois de 80 caracteres e as linhas a
- * seguir são Recuado por dois espaços.
+ * @todo This is a task statement that describes an atomic task to be 
+ * completed at a later date. It wraps after 80 characters, and the following lines 
+ * are indented by two spaces.
  */
 
-/* Comentário básico */
+/* Basic comment */
 ```
 
-#### exemplo com SCSS:
+#### Example with SCSS:
 
 ```scss
 // ==========================================================================
-// Bloco de comentário de seção
+// Section comment block
 // ==========================================================================
 
-// Bloco de comentário de sub-seção
+// Sub-section comment block
 // ==========================================================================
 
 //
-// Bloco de comentário de grupo
-// Ideal para explicações em múltiplas linhas e documentação.
+// Group comment block
+// Ideal for multi-line explanations and documentation.
 //
 
-// Comentário básico
+// Basic comment
 ```
 
-
 <a name="format"></a>
-## 4. Formatação
+## 4. Formatting
 
-O formato de código escolhido deve garantir que o código seja: fácil de ler;
-fácil de comentar claramente; minimize a chance de introduzir erros
-acidentalmente; e resulte em úteis visualizações de diferença.
+The chosen code format should ensure that the code is: easy to read; easy to comment on clearly; minimizes the chance of accidentally introducing errors; and results in useful diffs.
 
-* Um seletor discreto por linha em um conjunto de regras com multi-seletores.
-* Um único espaço antes da abertura das chaves em um conjunto de regras.
-* Uma única declaração por linha em um bloco de declarativo.
-* Um nível de indentação para cada declaração.
-* Um único espaço depois dos dois pontos de uma declaração.
-* Use valores minúsculos e abreviações hexadecimais, por exemplo, `#aaa`.
-* Use aspas simples ou duplas de forma consistente. Preferência é por aspas duplas,
-   por exemplo, `conteúdo:" "`.
-* Citação valores de atributos em seletores, por exemplo, `input [type="checkbox"]`.
-* _Onde for permitido_, evitar especificar unidades para zero valores, por exemplo, `margin: 0`.
-* Inclua um espaço após cada vírgula em propriedades separadas por vírgula ou valores de funções.
-* Sempre inclua um ponto-e-vírgula no fim da última declaração em um bloco
-   declarativo.
-* Coloque o fechamento das chaves na mesma coluna que o primeiro caracter do
-   conjunto de regras.
-* Separe cada conjunto de regras por uma linha em branco.
+* One discrete selector per line in multi-selector rule sets.
+* A single space before the opening brace in a rule set.
+* One declaration per line in a declaration block.
+* One level of indentation for each declaration.
+* A single space after the colon in a declaration.
+* Use lowercase and shorthand hex values, e.g., `#aaa`.
+* Use single or double quotes consistently. Preference is for double quotes, e.g., `content: " "`.
+* Quote attribute values in selectors, e.g., `input[type="checkbox"]`.
+* _Where allowed_, avoid specifying units for zero values, e.g., `margin: 0`.
+* Include a space after each comma in comma-separated property or function values.
+* Always include a trailing semicolon in the last declaration of a declaration block.
+* Place the closing brace of a rule set in the same column as the first character of the rule set.
+* Separate each rule set by a blank line.
 
 ```css
 .selector-1,
@@ -165,16 +137,13 @@ acidentalmente; e resulte em úteis visualizações de diferença.
 }
 ```
 
-#### Ordem de declaração
+#### Declaration Order
 
-Declarações devem ser ordenadas segundo um único princípio. Minha preferência é
-por propriedades relacionadas para serem agrupadas e por propriedades
-estruturalmente importantes (por exemplo, posicionamento e box-model) para
-serem declaradas antes de propriedades tipográficas, fundo ou cor.
+Declarations should be ordered according to a single principle. My preference is for related properties to be grouped and for structurally important properties (e.g., positioning and box-model) to be declared before typographic, background, or color properties.
 
 ```css
 .selector {
-    /* Posicionamento */
+    /* Positioning */
     position: absolute;
     z-index: 10;
     top: 0;
@@ -182,7 +151,7 @@ serem declaradas antes de propriedades tipográficas, fundo ou cor.
     bottom: 0;
     left: 0;
 
-    /* Display & Modelo de Caixa */
+    /* Display & Box Model */
     display: inline-block;
     overflow: hidden;
     box-sizing: border-box;
@@ -192,7 +161,7 @@ serem declaradas antes de propriedades tipográficas, fundo ou cor.
     border: 10px solid #333;
     margin: 10px;
 
-    /* Outros */
+    /* Other */
     background: #000;
     color: #fff;
     font-family: sans-serif;
@@ -201,16 +170,11 @@ serem declaradas antes de propriedades tipográficas, fundo ou cor.
 }
 ```
 
-Ordenação alfabética também é popular, mas a desvantagem é que ela separa as
-propriedades relacionadas. Por exemplo, deslocamentos de posição não são mais
-agrupados e propriedades do box-model podem acabar propagando ao longo de um
-bloco de declaração.
+Alphabetical ordering is also popular, but the downside is that it separates related properties. For example, positioning offsets are no longer grouped, and box-model properties can end up spread throughout a declaration block.
 
-#### Exceções e ligeiros desvios
+#### Exceptions and Minor Deviations
 
-Grandes blocos de declarações individuais podem atuar de forma diferente,
-através da formatação de linha única. Nesse caso, um espaço deve ser
-considerado depois da abertura das chaves e antes do fechamento das chaves.
+Large blocks of single declarations may use a different style, formatting on a single line. In this case, a space should be considered after the opening brace and before the closing brace.
 
 ```css
 .selector-1 { width: 10%; }
@@ -218,10 +182,7 @@ considerado depois da abertura das chaves e antes do fechamento das chaves.
 .selector-3 { width: 30%; }
 ```
 
-Longos valores de propriedades separados por vírgula - como coleções de
-degradês ou sombras - podem ser organizados em várias linhas em um esforço para
-melhorar a legibilidade e produz visualizações de diferença mais úteis. Existem
-vários formatos que poderiam ser usados; um exemplo é mostrado abaixo.
+Long, comma-separated property values - such as collections of gradients or shadows - can be arranged across multiple lines to improve readability and produce more useful diffs. Various formats could be used; one example is shown below.
 
 ```css
 .selector {
@@ -234,36 +195,22 @@ vários formatos que poderiam ser usados; um exemplo é mostrado abaixo.
 }
 ```
 
-#### Miscelânea
+#### Miscellaneous
 
-* Use valores hexadecimais em letras minúsculas, por exemplo: `#aaa`.
-* Use aspas simples ou duplas de forma consistente. Preferência por aspas
-  duplas, por exemplo: `content: ""`.
-* Sempre coloque aspas em valores de atributos nos seletores, por exemplo:
-  `input[type="checkbox"]`.
-* _Onde permitido_, evite especificar unidades para valores-zero, por exemplo:
-  `margin: 0`.
+* Use lowercase hex values, e.g., `#aaa`.
+* Use single or double quotes consistently. Preference is for double quotes, e.g., `content: ""`.
+* Always quote attribute values in selectors, e.g., `input[type="checkbox"]`.
+* _Where allowed_, avoid specifying units for zero values, e.g., `margin: 0`.
 
-### Pré-processadores: considerações de formatação adicionais
+### Preprocessors: Additional Formatting Considerations
 
-Diferentes pré-processadores de CSS possuem diferentes características,
-funcionalidades e sintaxe. Suas convenções devem ser extendidas para acomodar
-as particularidades de qualquer pré-processador em uso. As seguintes diretrizes
-são em referência ao Sass.
+Different CSS preprocessors have different features, functionalities, and syntax. Your conventions should be extended to accommodate the particularities of any preprocessor in use. The following guidelines reference Sass.
 
-* Limite o aninhamento a 1 nível de profundidade. Reavalie qualquer aninhamento
-  que tenha mais de 2 níveis de profundidade. Isso impede que existam seletores
-  CSS muito específicos.
-* Evite um grande número de regras aninhadas. Quebre-os para quando a
-  legibilidade começar a ser afetada. Preferência por evitar aninhamentos que
-  se espalhem por mais de 20 linhas.
-* Sempre coloque as declarações `@extend` nas primeiras linhas de um bloco
-  declarativo.
-* Quando possível, agrupe declarações `@include` no topo de blocos
-  declarativos, depois de qualquer declaração `@extend`.
-* Considere funções customizadas para prefixos com `x-` ou qualquer namespace.
-  Isso ajuda a evitar qualquer potencial confusão na sua função com a função de
-  CSS nativo ou de colidir com funções de bibliotecas.
+* Limit nesting to 1 level deep. Reevaluate any nesting that is more than 2 levels deep. This prevents overly specific CSS selectors.
+* Avoid a large number of nested rules. Break them up when readability starts to be affected. Preference is to avoid nesting that spreads over more than 20 lines.
+* Always place `@extend` statements at the top of a declaration block.
+* When possible, group `@include` statements at the top of declaration blocks, after any `@extend` statements.
+* Consider custom functions for prefixes with `x-` or any namespace. This helps avoid potential confusion with native CSS functions or conflicts with library functions.
 
 ```scss
 .selector-1 {
@@ -276,19 +223,16 @@ são em referência ao Sass.
 ```
 
 <a name="naming"></a>
-## 5. Nomeando
+## 5. Naming
 
-Você não é um compilador/compressor de código humano, então não tente ser.
+You are not a human code compiler/minifier, so don't try to be.
 
-Use nomes claros e previdentes para classes HTML. Escolha um padrão de nomes
-compreensível e consistente que faça sentido para arquivos HTML e arquivos
-CSS.
+Use clear and purposeful names for HTML classes. Choose a naming pattern that is understandable and consistent, making sense for both HTML and CSS files.
 
-Neste projeto vamos utilzar convenções de dominio e intenções de código, 
-vamos utlizar algumas padronizações de BEM e SMACS
+In this project, we will use domain and intent conventions, including some standardizations from BEM and SMACSS.
 
 ```css
-/* Exemplo de código com nomes ruins */
+/* Example of bad names */
 
 .s-scr {
     overflow: auto;
@@ -298,7 +242,7 @@ vamos utlizar algumas padronizações de BEM e SMACS
     background: #000;
 }
 
-/* Exemplo de código com bons nomes */
+/* Example of good names */
 
 .is-scrollable {
     overflow: auto;
@@ -308,35 +252,35 @@ vamos utlizar algumas padronizações de BEM e SMACS
     background: #000;
 }
 
-/* Exemplo de código com domínio e intenção*/
+/* Example of domain and intent */
 .home-container {
     width: 960px;
 }
 
-/* Usaremos underscore para palavras derivadas ou sub-modulós*/
+/* Use underscore for derived words or sub-modules */
 .home-header_navigation {
     background: gray;
 } 
 
-/* E undercore duplos para derivações aninhadas ou descendentes diretas*/
+/* Use double underscores for nested or direct
+
+ descendants */
 .home-header_navigation__item {
-  display: inline-blck
+    display: inline-block;
 }
 
-/* Usaremos -- para elementos modificadores */
+/* Use -- for modifier elements */
 .home-header_navigation--secondary {
     background: red;
-    heigth: 30px;
+    height: 30px;
     width: 100%;
 }
-
 ```
 
-
 <a name="example"></a>
-## 6. Exemplo prático
+## 6. Practical Example
 
-Um exemplo de várias convenções.
+An example showcasing various conventions.
 
 ```css
 /* ==========================================================================
@@ -344,12 +288,12 @@ Um exemplo de várias convenções.
    ========================================================================== */
 
 /*
- * Layout da coluna com scroll horizontal.
+ * Horizontal scroll column layout.
  *
- * Isso cria uma única linha de altura completa, não-envolvendo colunas que podem
- * ser navegadas na horizontal dentro de seu pai.
+ * This creates a single full-height, non-wrapping row of columns that can
+ * be horizontally scrolled within their parent.
  *
- * Exemplo de HTML:
+ * HTML Example:
  *
  * <div class="grid">
  *     <div class="cell cell-5"></div>
@@ -359,13 +303,13 @@ Um exemplo de várias convenções.
  
 /**
  * Grid container
- * Deve conter apenas filhos de `.cell`
+ * Must contain only `.cell` children
  */
 
 .grid {
     overflow: visible;
     height: 100%;
-    /* Prevent inline-block cells wrapping */
+    /* Prevent inline-block cells from wrapping */
     white-space: nowrap;
     /* Remove inter-cell whitespace */
     font-size: 0;
@@ -373,7 +317,7 @@ Um exemplo de várias convenções.
 
 /**
  * Grid cells
- * Largura não-explícita por padrão. Extenda com classes `.cell-n`.
+ * Default width is not explicit. Extend with `.cell-n` classes.
  */
 
 .cell {
@@ -416,14 +360,11 @@ Um exemplo de várias convenções.
 }
 ```
 
-
 <a name="organization"></a>
-## 7. Organização
+## 7. Organization
 
-Organização de código é uma importante parte de qualquer base de código CSS, e
-crucial para grandes bases de código.
+Code organization is an important part of any CSS codebase, and crucial for large codebases.
 
-* Separar logicamente distintas partes do código.
-* Usar arquivos separados (concatenados por um processo de build) para ajudar a
-  dividir código para componentes distintos.
-* Se estiver usando um pré-processador, abstrair partes comuns de código em variáveis para cor, tipografia, etc.
+* Logically separate distinct parts of the code.
+* Use separate files (concatenated by a build process) to help break up code for distinct components.
+* If using a preprocessor, abstract common parts of the code into variables for color, typography, etc.

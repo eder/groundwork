@@ -13,7 +13,6 @@ This is a living document, and new ideas are always welcome.
 5. [Naming](#naming)
 6. [Practical Example](#example)
 7. [Organization](#organization)
-8. [Build and Deployment](#build-and-deployment)
 
 <a name="general-principles"></a>
 ## 1. General Principles
